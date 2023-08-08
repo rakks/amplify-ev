@@ -19,11 +19,11 @@ class Login extends React.Component {
     render() { 
 
         return (
-            <div>
-                <div className='div-login' >
-                <img src={MyImage} alt="Logo" />
+            <div className="div-login">
+                <div className='div-login-logo' >
+                    <img src={MyImage} alt="Logo" style={{width:250, height:200}} />
                 </div>
-                <div className='div-login-fields'>
+                <div>
                 <form onSubmit={this.handleSubmit}>
                     Username or Email: <input type = "email" name = "email" placeholder = "email..." required/>
                     <br/>
